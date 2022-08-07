@@ -1,0 +1,61 @@
+@font-face{
+    font-family: 'BebasNeue-Regular';
+    src: url(./Fonts/BebasNeue-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: BebasNeue-Regular;
+}
+
+body .ocean{
+    min-height: 100vh;
+    /*O lienear gardient, só funciona por que existe uma altura minima no elemento que o recebe (tag body)*/
+    background: linear-gradient(180deg,rgb(36 190 172 / 19%), rgb(36 181 190 / 58%), rgb(35 79 190 / 80%), rgb(36 79 190));
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-menu p{
+    font-size: 41px;
+    color: darkblue;
+}
+
+.menu-links{
+    display: flex;
+    justify-content: space-between;
+    width: 26rem;
+}
+
+.menu-links a{
+    text-decoration: none;
+    color: darkblue;;
+    font-size: 22px;
+}
+
+#fish{
+    position: relative;
+    width: 17rem;
+}
+
+.sea{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30vh;
+    margin-left: 64rem;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 19px;
+    background: linear-gradient(rgb(37 80 190),rgb(17 65 161), rgb(7 44 110));
+}

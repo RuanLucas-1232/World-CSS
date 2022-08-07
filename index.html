@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>World CSS</title>
+</head>
+<body>
+    <section class="ocean">
+        <header class="header-menu">
+            <p>Maritima</p>
+            
+            <nav class="menu-links">
+                <a href="#">Passeios</a>
+                <a href="#">Lugares</a>
+                <a href="#">Eventos</a>
+                <a href="#">Cadastre-se</a>
+                <a href="#">Login</a>
+            </nav>
+        </header>
+    
+        <section class="sea">
+            <img id="fish" src="./images/goldfish-30837.svg">
+        </section>
+    </section>
+    
+    <main>
+        <article id="about">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem asperiores,
+            tempora eius iste unde nobis reprehenderit quia dignissimos<br>
+            iusto quam, natus enim ut pariatur beatae ullam eveniet. Quo, iure?<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem asperiores,
+            tempora eius iste unde nobis reprehenderit quia dignissimos<br>
+            iusto quam, natus enim ut pariatur beatae ullam eveniet. Quo, iure?<br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem asperiores,
+            tempora eius iste unde nobis reprehenderit quia dignissimos<br>
+            iusto quam, natus enim ut pariatur beatae ullam eveniet. Quo, iure?
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem asperiores,
+            tempora eius iste unde nobis reprehenderit quia dignissimos<br>
+            iusto quam, natus enim ut pariatur beatae ullam eveniet. Quo, iure?<br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem asperiores,
+            tempora eius iste unde nobis reprehenderit quia dignissimos<br>
+            iusto quam, natus enim ut pariatur beatae ullam eveniet. Quo, iure?
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem asperiores,
+            tempora eius iste unde nobis reprehenderit quia dignissimos<br>
+            iusto quam, natus enim ut pariatur beatae ullam eveniet. Quo, iure?<br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem asperiores,
+            tempora eius iste unde nobis reprehenderit quia dignissimos<br>
+            iusto quam, natus enim ut pariatur beatae ullam eveniet. Quo, iure?
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatem asperiores,
+            tempora eius iste unde nobis reprehenderit quia dignissimos<br>
+            iusto quam, natus enim ut pariatur beatae ullam eveniet. Quo, iure?<br>
+            <br>
+        </article>
+    </main>
+</body>
+
+<script>
+    const $fish = document.querySelector('#fish');
+
+    window.addEventListener('scroll',function () {
+        let value = window.scrollY;
+
+        $fish.style.right = value * 2 + 'px';
+    })
+</script>
+</html>
