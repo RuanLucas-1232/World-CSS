@@ -1,50 +1,68 @@
-@font-face{
+@font-face {
     font-family: 'BebasNeue-Regular';
-    src: url(./Fonts/BebasNeue-Regular.ttf);
+    src: url(./Fonts/BebasFont/BebasNeue-Regular.ttf);
 }
 
-*{
+@font-face {
+    font-family: 'MouseMemoirs-Regular';
+    src: url(./Fonts/MauseMemorisFont/MouseMemoirs-Regular.ttf);
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: BebasNeue-Regular;
 }
 
-body .ocean{
+body .ocean {
     min-height: 100vh;
     /*O lienear gardient, só funciona por que existe uma altura minima no elemento que o recebe (tag body)*/
-    background: linear-gradient(180deg,rgb(36 190 172 / 19%), rgb(36 181 190 / 58%), rgb(35 79 190 / 80%), rgb(36 79 190));
+    background: linear-gradient(180deg, rgb(36 190 172 / 19%), rgb(36 181 190 / 58%), rgb(35 79 190 / 80%), rgb(36 79 190));
 }
 
-.header-menu{
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header-menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 80px;
+    font-family: BebasNeue-Regular;
 }
 
-.header-menu p{
+.header-menu p {
     font-size: 41px;
     color: darkblue;
 }
 
-.menu-links{
+.menu-links {
     display: flex;
     justify-content: space-between;
     width: 26rem;
 }
 
-.menu-links a{
+.menu-links a {
     text-decoration: none;
-    color: darkblue;;
+    color: darkblue;
+    ;
     font-size: 22px;
+    padding: 7px;
+    border-radius: 20px;
 }
 
-#fish{
+.menu-links a:hover {
+    background-color: aqua;
+}
+
+#fish {
     position: relative;
     width: 17rem;
 }
 
-.sea{
+.sea {
     display: flex;
     justify-content: center;
     position: relative;
@@ -52,10 +70,108 @@ body .ocean{
     margin-left: 64rem;
 }
 
-#about{
+
+#about {
     display: flex;
     justify-content: center;
     color: white;
     font-size: 19px;
-    background: linear-gradient(rgb(37 80 190),rgb(17 65 161), rgb(7 44 110));
+    background: linear-gradient(rgb(37 80 190), rgb(17 65 161), rgb(7 44 110));
+    backdrop-filter: blur(1px);
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+#explore {
+    height: 200vh;
+    background-color: #072c6f;
+    filter: drop-shadow(0 0 7px #072c6f);
+}
+
+.bobble{
+
+}
+
+#explore:hover {
+
+    /* #fish2{
+    width: 11rem;
+    height: 112px;
+    position: relative;
+    top: -16rem;
+    right: 92rem;
+
+    animation-name: toMoveFish;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+} */
+
+    
+
+    @keyframes toMoveFish {
+        
+    }
+}
+
+#explore img {
+    width: 360px;
+    height: 24rem;
+
+    width: 360px;
+    height: 24rem;
+    margin-left: 108px;
+    margin-right: 108px;
+
+    box-shadow: 0px 0px 17px 1px #07072a;
+}
+
+.Apresentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 7rem;
+
+
+}
+
+
+
+#img-row1 {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 100px;
+}
+
+#img-row2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12rem;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.column h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.column p {
+    margin-top: 40px;
+    color: white;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    width: 22rem;
+}
+
+.column h2{
+    font-family:'Arial Narrow Bold', sans-serif;
 }
